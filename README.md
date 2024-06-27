@@ -87,8 +87,6 @@ To run the application, ensure both the backend and frontend servers are running
 ### CSS
 
 - CSS Modules
-- SCSS
-
 
 ## Author
 
