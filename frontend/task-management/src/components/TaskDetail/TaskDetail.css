@@ -1,0 +1,88 @@
+body {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.task-detail {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-out;
+  width: 100%;
+  max-width: 500px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.task-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.task-title:hover {
+  color: #4caf50;
+}
+
+.task-description,
+.task-due-date {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.task-description:hover,
+.task-due-date:hover {
+  color: #4caf50;
+}
+
+.button-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.edit-button,
+.delete-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.edit-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.edit-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
